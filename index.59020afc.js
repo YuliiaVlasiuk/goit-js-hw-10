@@ -1,0 +1,2 @@
+let e="Ukraine";document.querySelector("#search-box").addEventListener("input",(function(t){e=t.currentTarget.value,(n=e,fetch(`https://restcountries.com/v3.1/name/${n}`).then((e=>{if(!e.ok)throw new Error(e.status);return e.json()}))).then((e=>{e.length>4?alert("Too many matches found. Please enter a more specific name."):console.log(e.length)}));var n}));
+//# sourceMappingURL=index.59020afc.js.map

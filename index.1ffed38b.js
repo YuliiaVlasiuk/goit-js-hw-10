@@ -1,0 +1,2 @@
+document.querySelector("#search-box").addEventListener("input",(function(e){var t;(t=e.currentTarget.value,fetch("https://restcountries.com/v3.1/name/".concat(t)).then((function(e){if(!e.ok)throw new Error(e.status);return e.json()}))).then((function(e){e.length>4?alert("Too many matches found. Please enter a more specific name."):console.log(e.length)}))}));
+//# sourceMappingURL=index.1ffed38b.js.map
