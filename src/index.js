@@ -1,5 +1,5 @@
 import './css/styles.css';
-
+import Notiflix from 'notiflix';
 
 const DEBOUNCE_DELAY = 300;
 let name = 'Ukraine';
@@ -14,7 +14,7 @@ function onSearching(evt) {
 
   fetchCountries(name).then(data => {
     if (data.length > 4) {
-      alert('Too many matches found. Please enter a more specific name.');
+        Notiflix.Notify.failure('Too many matches found. Please enter a more specific name.' );
       return
     }
 console.log(data.length);
