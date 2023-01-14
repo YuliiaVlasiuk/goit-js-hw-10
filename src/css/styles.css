@@ -18,3 +18,19 @@ body {
   max-width: 320px;
   margin-bottom: 16px;
 }
+.flag {
+  width: 40px;
+  height: 40px;
+}
+
+ul {
+  list-style: none;
+}
+.list_of_countries {
+  display: flex;
+  gap: 10px;
+  height: 40px;
+  align-items: center;
+  margin-bottom: 10px;
+  
+}
