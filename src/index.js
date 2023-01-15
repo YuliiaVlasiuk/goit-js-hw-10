@@ -16,7 +16,7 @@ function onSearching(evt) {
   countryList.innerHTML = '';
 
   if (!name) {
-    return alert('add value');
+    return ;
   }
 
   fetchCountries(name)
